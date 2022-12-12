@@ -1,0 +1,177 @@
+*{
+    margin: auto;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    overflow: hidden;
+}
+.background {
+    min-height: inherit;
+    height: 100vh;
+    width: 100%;
+    background-image: url(Images/home-page.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 6;
+}
+.welcome{
+    position: fixed;
+    left: 250px;
+    top: 0;
+    height: 0;
+    width: 100%;
+    transform: rotate(-90deg);
+    z-index: 99;
+}
+.welcome h1{
+    font-size: 450px;
+    text-transform: uppercase;
+    font-family: 'Yuji Boku', serif;
+    color: red;
+    filter: blur(4px);
+    white-space: nowrap;
+    animation: infiniteText 10s linear infinite;
+}
+@keyframes infiniteText {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+.yokai{
+    position: fixed;
+    left: -900px;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    transform: rotate(-90deg);
+    z-index: 99;
+}
+.yokai h1{
+    font-size: 450px;
+    text-transform: uppercase;
+    font-family: 'Yuji Boku', serif;
+    color: red;
+    filter: blur(4px);
+    white-space: nowrap;
+    animation: infiniteText2 10s linear infinite;
+}
+@keyframes infiniteText2 {
+    100%{
+        transform: translateX(0);
+    }
+    0%{
+        transform: translateX(-50%);
+    }
+}
+.welcomeeng{
+    position: fixed;
+    left: 250px;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    transform: rotate(60deg);
+    z-index: 4;
+}
+.welcomeeng h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: red;
+    word-spacing: 20px;
+    white-space: nowrap;
+    animation: infiniteText2 10s linear infinite;
+}
+@keyframes infiniteText2 {
+    100%{
+        transform: translateX(0);
+    }
+    0%{
+        transform: translateX(-50%);
+    }
+}.yokaieng{
+    position: fixed;
+    left: -190px;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    transform: rotate(-60deg);
+    z-index: 2;
+}
+.yokaieng h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: red;
+    word-spacing: 20px;
+    white-space: nowrap;
+    animation: infiniteText 10s linear infinite;
+}
+@keyframes infiniteText {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+.homebutton {
+    position: relative;
+    top: 75vh;
+    left: 0vh;
+    margin-bottom: -6vh;
+    z-index: 6;
+}
+h3{
+    font-size: 1.5em;
+    color: red;
+    text-align: center;
+    display: fixed;
+    letter-spacing: 5px;
+    font-variant: small-caps;
+    z-index: 6;
+}
+h3 span{
+    transition: 1.5s;
+    z-index: 6;
+}
+h3:hover span{
+    filter: blur(20px);
+    opacity: 0;
+    transform: scale(2);
+    z-index: 6;
+}
+.enter {
+    text-align: center;
+    padding: 0px 50px 20px 30px;
+    z-index: 6;
+}
+a.enter {
+    background-color: whitesmoke;
+    color: red;
+    border-radius: 20px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+    display: inline-flex;
+    z-index: 6;
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .background {
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .button, .background, {
+    width: 100%;
+  }
